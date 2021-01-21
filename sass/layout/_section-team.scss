@@ -1,0 +1,116 @@
+@media screen and (min-width: 768px){
+    .section-team{
+        background-color: #F5F4FA;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section-team__img{
+    width: 354px;
+    height: 374px;
+    }
+
+    .team-list-link{
+    width: 354px;
+    }
+
+    .team-list{
+        display: flex;
+        flex-wrap: wrap; 
+    } 
+}
+
+.section-team__img{
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1200px){
+    .team-list{
+        display: flex;
+        
+        padding-top: 50px;
+    }
+
+    .section-team__img{ 
+        width: 270px;
+        height: 260px;
+    }
+
+    .team-list-link{
+        width: 270px;
+        height: 428px;
+    }
+    
+    .team-list .team-list-link + .team-list-link{
+        margin-left: 30px;
+    }
+}
+
+.section-team__img{
+    width: 100%;
+}
+
+.section-team-title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-texst-color);
+}
+
+.team-list{
+    justify-content: space-between;
+}
+
+.team-title-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--title-texst-color);
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.team-title-skills{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--primary-texst-color);
+    padding-bottom: 30px;
+}
+
+.team-title-info{
+    background-color: var(--primary-white-color);
+    text-align: center;
+    min-width: 108px;
+    align-items: center;
+}
+
+.team-list-link{
+    box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 30px;
+}
+
+.team-icon{
+    justify-content: center;
+    display: flex;
+    padding-bottom: 30px;
+
+    &.team{
+        --icon-color: currentColor;
+    } 
+}
+
+.svg-list-item.team{
+    fill: var(--icon-color);
+
+    &:hover, 
+    &:focus {
+      background-color: var(--accent-color) ;
+      fill: var(--primary-white-color);
+    }
+}
