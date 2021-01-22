@@ -45,13 +45,10 @@
     .current::after {
         content: '';
         transform: translateY(33px);
-        left: 0;
-        bottom: 0px;
-        display: block;
+        max-width: 75px;
         width: 100%;
         height: 4px;
-        border-radius: 2px;
-        background-color: var(--accent-color);
+      
     }
 
     .site-nav{
@@ -130,6 +127,14 @@
     margin-bottom: 0;
     margin-right: 30px;
     } 
+    .current::after {
+        content: '';
+        transform: translateY(32px);
+        width: 100%;
+        min-width: 48px;
+        height: 4px;
+       
+    }
 }   
 
 .menu-button{
@@ -272,7 +277,7 @@
     margin-left: auto;
     margin-right: auto;
     height: 4px;
-    width: 61px;
+    max-width: 61px;
     align-items: center;
     border-radius: 2px;
     background-color: var(--accent-color);
